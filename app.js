@@ -138,3 +138,11 @@ if(searchInput) {
         });
     });
 }
+window.addEventListener('load', function() {
+    const splash = document.getElementById('splash-screen');
+    
+    // Website load hone ke 2 second baad screen hatega
+    setTimeout(() => {
+        splash.classList.add('fade-out');
+    }, 2000); 
+});
